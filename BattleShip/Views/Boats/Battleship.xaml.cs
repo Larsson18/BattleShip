@@ -1,5 +1,4 @@
-﻿using BattleShip.ViewModels;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,17 +13,17 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace BattleShip
+namespace BattleShip.Views.Boats
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for Cruiser.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Battleship : Boat
     {
-        public MainWindow()
+        public Battleship()
         {
             InitializeComponent();
-            DataContext= new MainViewModel();
+            Size = 4;
         }
     }
 }
